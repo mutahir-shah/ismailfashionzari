@@ -1,0 +1,11 @@
+{
+    "name": "SocialCommerce",
+    "alias": "socialcommerce",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SocialCommerce\\Providers\\SocialCommerceServiceProvider"
+    ],
+    "files": []
+}

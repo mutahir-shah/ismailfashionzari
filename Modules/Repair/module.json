@@ -1,0 +1,11 @@
+{
+    "name": "Repair",
+    "alias": "repair",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Repair\\Providers\\RepairServiceProvider"
+    ],
+    "files": []
+}

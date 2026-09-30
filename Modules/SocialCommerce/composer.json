@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/socialcommerce",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SocialCommerce\\": "",
+            "Modules\\SocialCommerce\\App\\": "app/",
+            "Modules\\SocialCommerce\\Database\\Factories\\": "database/factories/",
+            "Modules\\SocialCommerce\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\SocialCommerce\\Tests\\": "tests/"
+        }
+    }
+}

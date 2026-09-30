@@ -1,0 +1,11 @@
+{
+    "name": "IndiaGST",
+    "alias": "indiagst",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\IndiaGST\\Providers\\IndiaGSTServiceProvider"
+    ],
+    "files": []
+}
