@@ -46,7 +46,7 @@
                 @endif
             </div>
             
-            <h4 class="mt-4 mb-4">Send Request for Deleting Account</h4>
+            <h4 class="mt-4 mb-4">Send Request for Deleting Accounts</h4>
 
             @if(session('success'))
                 <div class="alert alert-success alert-dismissible text-center">

@@ -13,3 +13,18 @@ trim_trailing_whitespace = false
 
 [*.{yml,yaml}]
 indent_size = 2
+
+
+July 2025
+July 2026
+Salary  = 165000
+Tax Deduction 7650 * 12 = 91800
+165000 * 12 = 1980000
+
+Net sal = 165000 * 12 = 1980000
+Net Tax Deducted 91800
+
+Car Value = RS 2500000
+Suzuki/Wagon-R 2018
+Date of Purchase 08/03/2025
+Date of Transfer 10/03/2025
