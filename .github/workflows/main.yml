@@ -1,0 +1,39 @@
+name: Deploy Ismail Fashion
+
+on:
+  push:
+    branches:
+      - ismailfashion
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Hostinger
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          script: |
+            set -e
+
+            cd /home/u472752505/domains/ismailfashionparadise.com/public_html/projects/ismailfashionzari
+
+            git fetch origin ismailfashion
+            git reset --hard origin/ismailfashion
+
+            composer install \
+              --no-dev \
+              --optimize-autoloader \
+              --no-interaction
+
+            php artisan migrate --force
+
+            php artisan optimize:clear
+            php artisan optimize
+
+            echo "Deployment completed successfully."
